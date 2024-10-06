@@ -3,10 +3,10 @@
 function onGetCountryInfo() {
     console.log('Hi')
     const elInput = document.querySelector('.input-country')
-    console.log(elInput.value)
-
+    getCountryByName(elInput.value).then(renderInfo)
 }
 
 function renderInfo(data) {
-    console.log('Rendering...')
+    console.log(data)
+
 }
